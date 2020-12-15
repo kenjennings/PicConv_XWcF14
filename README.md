@@ -4,15 +4,17 @@ Convert a png to a program that loads and shows the program.
 
 ---
 
-** Original Picture:
+** Original Picture: **
 
 [![OriginalPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14.png)](#features)
 
-** Atari800 emulator displaying the graphics:
+** Atari800 emulator displaying the graphics: **
 
 [![AtariPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14_ATARI800_640.png)](#features)
 
-** Lame Programs and Stuff
+---
+
+** Lame Programs and Stuff **
 
 XWcF14.png -- Original graphics file.
 
@@ -33,3 +35,5 @@ XWcF14.xex -- Lame Atari executable program that loads the display list, screen 
 XWcF14_160x96.png -- The graphics file resized to 160x96 to fit the Atari Graphics Mode 7 screen resolution.   This is what was run through GIMP to produce the C Array of pixel data.
 
 XWcF14_ATARI800_640.png -- Screen grab from the Atari800 emulator running the XWcF14.xex program.
+
+---
