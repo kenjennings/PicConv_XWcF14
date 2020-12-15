@@ -1,6 +1,6 @@
 # PicConv_XWcF14
 
-Convert a png to a program that loads and shows the program.
+Convert a png to an Atari 8-bit graphics screen and make an Atari executable program that loads and shows the screen.
 
 ---
 
