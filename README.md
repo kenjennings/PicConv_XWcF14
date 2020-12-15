@@ -6,11 +6,11 @@ Convert a png to a program that loads and shows the program.
 
 -- Original Picture:
 
-[![OriginalPic](https://github.com/kenjennings/PicConv_XWcF14/blob/master/XWcF14.png)](#features)
+[![OriginalPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14.png)](#features)
 
 -- Atari800 emulator displaying the graphics:
 
-[![AtariPic](https://github.com/kenjennings/PicConv_XWcF14/blob/master/XWcF14_ATARI800_640.png)](#features)
+[![AtariPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14_ATARI800_640.png)](#features)
 
 -- Lame Programs and Stuff
 
