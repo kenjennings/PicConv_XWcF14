@@ -48,7 +48,13 @@ Added a Display List Interrupt to change two color registers to red values.
 
 In order to make this work a tree on the right had to be moved up a little and the little house on the left had to be moved down so that the DLI does not occur in the middle of these objects.
 
-Additionally, I revisited how the code was done to create the executable to display the image to make the image acquisition, conversion and building part easier to repeat.  I also reorganized the code to behave a little bit better by shuttting of screen DMA at the beginning, so the Display List and graphics loading into the memeory where the current Display List is running does not not cause any glitches and potentially crash the system.
+Additionally, I revisited the image acquisition, conversion and executable creation to be easier (for me) to repeat.  
+
+The BASIC XL program does not create the Atari executable to load and present the graphics.  There were too many new things to add, and forcing bytewise output of an Atari executable from BASIC was just going become too tedious.   Instead, the BASIC XL program outputs the graphics data as assembly language .BYTE statements.   
+
+The loading and presentation program is a real assembly language program and when it is assembled it includes the assembly language file of graphics data.  
+
+I also reorganized the code to behave a little bit better by shuttting of screen DMA at the beginning, so the Display List and graphics loading into the memeory where the current Display List is running does not not cause any glitches and potentially crash the system.
 
 ---
 
