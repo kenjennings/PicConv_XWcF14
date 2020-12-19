@@ -8,13 +8,13 @@ Convert a png to an Atari 8-bit graphics screen and make an Atari executable pro
 
 [![OriginalPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14.png)](#features)
 
-**Atari800 emulator displaying the graphics:**
+**Atari800 Emulator Displaying The Graphics:**
 
 [![AtariPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14_ATARI800_640.png)](#features)
 
 ---
 
-**Lame Programs and Stuff**
+**Lame Programs And Stuff**
 
 Presented more or less in order of use...
 
@@ -40,7 +40,7 @@ XWcF14_ATARI800_640.png -- Screen grab from the Atari800 emulator running the La
 
 ---
 
-**Red Modification added with a DLI**
+**Atari800 Emulator Displaying The Image With Red Modification Added Via DLI**
 
 [![AtariPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14_redmod.png)](#features)
 
@@ -52,7 +52,7 @@ Additionally, I revisited how the code was done to create the executable to disp
 
 ---
 
-**Mo' Lame Programs and Stuff**
+**Mo' Lame Programs And Stuff**
 
 Presented more or less in order of use...
 
@@ -77,6 +77,3 @@ picload.xex -- Lame Atari executable program that loads the display list, screen
 XWcF14_redmod.png -- Screen grab from the Atari800 emulator running the Lame picload.xex program.
 
 ---
-
-
-
