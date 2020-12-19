@@ -44,6 +44,39 @@ XWcF14_ATARI800_640.png -- Screen grab from the Atari800 emulator running the La
 
 [![AtariPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14_redmod.png)](#features)
 
+Added a Display List Interrupt to change two color registers to red values.
+
+In order to make this work a tree on the right had to be moved up a little and the little house on the left had to be moved down so that the DLI does not occur in the middle of these objects.
+
+Additionally, I revisited how the code was done to create the executable to display the image to make the image acquisition, conversion and building part easier to repeat.  I also reorganized the code to behave a little bit better by shuttting of screen DMA at the beginning, so the Display List and graphics loading into the memeory where the current Display List is running does not not cause any glitches and potentially crash the system.
+
 ---
+
+**Mo' Lame Programs and Stuff**
+
+Presented more or less in order of use...
+
+image.c  -- The graphics file output by GIMP as a C array of pixel data.   This is #included by the rgb2ascii executable which converts the pixel color array data to ASCII characters representing pixels.
+
+rgb2ascii.c -- Lame C program that builds into the rgb2ascii Linux program to convert the GIMP-created C array into the ASCII version of text letters representing pixels.
+
+rgb2ascii -- Lame Linux executable program that outputs the GIMP-created C array as a more manageable ASCII file of letters representing pixel values.
+
+image.asc -- ASCII text version of the screen graphics.  This is output by the rgb2ascii Linux executable program and read by the RGB2ASCII.BXL program to convert this to Atari graphics.
+
+RGB2ASCII.BXL -- Lame OSS BASIC XL program (SAVE'd, tokenized version) that reads the text representation of pixels output from the Lame rgb2ascii program (the image.asc file), plots the data in graphics mode 7, and then outputs the Display List and screen data as assembly language .BYTE statements.
+
+- RGB2ASCII.LXL -- LIST'd version, in ATASCII format, of the Lame RGB2ASCII.BXL BASIC XL program 
+
+- RGB2ASCII.TXL -- LIST'd version, in regular ASCII (normal line feeds) of the Lame RGB2ASCII.BXL BASIC XL program.
+
+picload.asm -- Atari assembly language program (assemble with MADS) that includes the image.asm data output by the RGB2ASCII.BXL program resulting in an executable program that presents the graphics image.
+
+picload.xex -- Lame Atari executable program that loads the display list, screen memory, color registers, and then waits.  This is created by assembling the Lame picload.asm program.
+
+XWcF14_redmod.png -- Screen grab from the Atari800 emulator running the Lame picload.xex program.
+
+---
+
 
 
