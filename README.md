@@ -39,3 +39,11 @@ XWcF14.xex -- Lame Atari executable program that loads the display list, screen 
 XWcF14_ATARI800_640.png -- Screen grab from the Atari800 emulator running the Lame XWcF14.xex program.
 
 ---
+
+**Red Modification added with a DLI**
+
+[![AtariPic](https://github.com/kenjennings/PicConv_XWcF14/blob/main/XWcF14_redmod.png)](#features)
+
+---
+
+
