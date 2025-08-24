@@ -54,7 +54,7 @@ The BASIC XL program does not create the Atari executable to load and present th
 
 The loading and presentation program is a real assembly language program and when it is assembled it includes the assembly language file of graphics data.  
 
-I also reorganized the code to behave a little bit better by shuttting of screen DMA at the beginning, so the Display List and graphics loading into the memeory where the current Display List is running does not not cause any glitches and potentially crash the system.
+I also reorganized the code to behave a little bit better by shuttting of screen DMA at the beginning, so the Display List and graphics loading into the memory where the current Display List is running does not not cause any glitches and potentially crash the system.
 
 ---
 
